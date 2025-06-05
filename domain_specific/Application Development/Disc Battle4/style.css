@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+*{
+    width: 100%;
+    height:100%;
+    margin: 0;
+  padding: 0px;
+  background-color: rgb(133, 70, 228);
+   
+}
+.darkbg{
+    background-color: rgb(0, 0, 0);
+}
+.box{
+ background-color: rgba(200, 155, 219, 0);
+    border:2px solid rgba(248, 248, 248, 0);
+}
+.game{
+    width:800px;
+    height:600px;
+    position: relative;
+    left: 200px;
+    top:100px;
+      display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:0px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 3;
+    background-color: unset;
+   
+}
+.nav{
+    width:550vw;
+    height:10vh;
+    margin: 0px;
+    padding: 0px;
+      font-family: "Baloo Bhai 2", sans-serif;
+      font-size:xxx-large;
+      border: 2px solid rgb(255, 255, 255);
+      background-color: rgb(164, 61, 248);
+      text-align: center;
+      display: flex;
+     align-items: center;
+      color: aliceblue;
+}
+
+#myCanvas{
+    position: absolute;
+    top:0px;
+    z-index: 2;
+    background-color: unset;
+    width:100px;
+    height:100px;
+}
+#WON{
+  position: absolute;
+     font-family: "Baloo Bhai 2", sans-serif;
+      font-size:xxx-large; 
+      top:110px;
+      right:-1000px;
+      background-color: unset;
+}
+.turn{
+    position: absolute;
+     font-family: "Baloo Bhai 2", sans-serif;
+      font-size:xxx-large; 
+      top:110px;
+      right:-1000px;
+      background-color: unset;
+      color: white;
+}
+.info{
+    position: absolute;
+     font-family: "Baloo Bhai 2", sans-serif;
+      font-size:xx-large; 
+      top:110px;
+      right:-10px;
+      background-color: unset;
+      color: white;
+}
+.theme{
+  font-family: "Baloo Bhai 2", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+  border:2px solid black;
+  width:120px;
+  height:100px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  position: relative;
+  top:-800px;
+  left:10px;
+  cursor:pointer;
+  z-index: 100000;
+  background-color: unset;
+}
+.dark{
+   border:2px solid white;
+}
+.darktheme{
+   border:2px solid white;
+   color:white;
+}
+.darknav{
+  background-color:  rgb(36, 7, 59);;
+}
+.leaderboard{
+  border:2px solid black;
+   font-family: "Baloo Bhai 2", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+  width:50vw;
+  height:50vh;
+  position: absolute;
+  z-index:-1;
+  top:20vh;
+  left:30vw;
+  background-color: rgba(63, 55, 140, 0.703);
+}
+#t1{
+   
+   font-family: "Baloo Bhai 2", sans-serif;
+  color: rgb(240, 239, 239);
+  font-size: large;
+  position: absolute;
+  top:50vh;
+  left:2vw;
+  z-index: 1000000000000;
+  background-color: unset;
+  width:100px;
+  height:100px;
+}
+#t2{
+    
+   font-family: "Baloo Bhai 2", sans-serif;
+  color: rgb(240, 239, 239);
+  font-size: large;
+  position: absolute;
+  top:30vh;
+  right:50px;
+  z-index: 1000000000000;
+  background-color: unset;
+  width:100px;
+  height:100px;
+}
+#myCanvas {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#myBCanvas{
+     position: absolute;
+    top:0px;
+    z-index: 1;
+    background-color:unset;
+     width: 100%;
+    height: auto;
+   display: block;
+}
+.audio{
+ 
+background-color: unset;
+  width: 80px;
+  height:80px;
+  position: absolute;
+  z-index: 100000000;
+  top:0px;
+  right: 50px;
+  
+ 
+ 
+
+}
+.audio img{
+  filter: invert(0);
+    cursor: pointer;
+  background-color: unset;
+}
+@media only screen and (max-width:1288px){
+  #t2{
+    right:-1000px;
+}
+
+}
+@media only screen and (max-width:537px){
+.turn{
+  font-size: x-large;
+}
+.info{
+  font-size: x-large;
+}
+.theme{
+   font-size: large;
+}
+
+}
